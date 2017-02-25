@@ -1,0 +1,10 @@
+Enter File Name:
+The File Name entered is:test.txt.
+
+The number of characters read : 258
+
+The total number of unique words are : 50
+11
+Enter the search word:
+The search word entered is: football.
+The word never occurs in the book!

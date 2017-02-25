@@ -1,0 +1,63 @@
+Enter File Name:
+The File Name entered is:ip3.txt.
+
+The number of characters read : 13824
+
+The total number of unique words are : 2325
+Enter the search word:
+The search word entered is: pattern.
+The word occurs at following indexes and in the following sentences!
+40->﻿Pattern matching is to find a pattern, which is relatively small, in a text, which is supposed to be very large
+421->.
+In the text editor, a pattern is often a word, whose length is around 10, and the length of the text is a few hundred up to one million
+693->.
+In the case of two-dimensional, the typical application is a pattern matching in computer visiontext is a few hundred up to one million
+732->.
+A pattern is about (100, 100) and text typically (1024,1024) pattern matching in computer visiontext is a few hundred up to one million
+919->.
+Either one-dimensional or two-dimensional, the text is very large, and therefore a fast algorithm to find the occurrence(s) of pattern in it is needed
+1010->.
+At first the pattern is set to the left end of the text, and matching process startsast algorithm to find the occurrence(s) of pattern in it is needed
+1110->.
+After a mismatch is found, pattern is shifted one place right and a new matching process starts, and so onthe occurrence(s) of pattern in it is needed
+1195->.
+The pattern and text are in arrays pat[1m] and text[1n] respectivelynew matching process starts, and so onthe occurrence(s) of pattern in it is needed
+6175->.
+Pattern matching is to find a pattern, which is relatively small, in a text, which is supposed to be very largeccurrence(s) of pattern in it is needed
+6556->.
+In the text editor, a pattern is often a word, whose length is around 10, and the length of the text is a few hundred up to one millionin it is needed
+6828->.
+In the case of two-dimensional, the typical application is a pattern matching in computer visiontext is a few hundred up to one millionin it is needed
+6867->.
+A pattern is about (100, 100) and text typically (1024,1024) pattern matching in computer visiontext is a few hundred up to one millionin it is needed
+7054->.
+Either one-dimensional or two-dimensional, the text is very large, and therefore a fast algorithm to find the occurrence(s) of pattern in it is needed
+7145->.
+At first the pattern is set to the left end of the text, and matching process startsast algorithm to find the occurrence(s) of pattern in it is needed
+7245->.
+After a mismatch is found, pattern is shifted one place right and a new matching process starts, and so onthe occurrence(s) of pattern in it is needed
+7330->.
+The pattern and text are in arrays pat[1m] and text[1n] respectivelynew matching process starts, and so onthe occurrence(s) of pattern in it is needed
+9964->.
+Pattern matching is to find a pattern, which is relatively small, in a text, which is supposed to be very largeccurrence(s) of pattern in it is needed
+10345->.
+In the text editor, a pattern is often a word, whose length is around 10, and the length of the text is a few hundred up to one millionin it is needed
+10617->.
+In the case of two-dimensional, the typical application is a pattern matching in computer visiontext is a few hundred up to one millionin it is needed
+10656->.
+A pattern is about (100, 100) and text typically (1024,1024) pattern matching in computer visiontext is a few hundred up to one millionin it is needed
+10843->.
+Either one-dimensional or two-dimensional, the text is very large, and therefore a fast algorithm to find the occurrence(s) of pattern in it is needed
+10934->.
+At first the pattern is set to the left end of the text, and matching process startsast algorithm to find the occurrence(s) of pattern in it is needed
+11034->.
+After a mismatch is found, pattern is shifted one place right and a new matching process starts, and so onthe occurrence(s) of pattern in it is needed
+11119->.
+The pattern and text are in arrays pat[1m] and text[1n] respectivelynew matching process starts, and so onthe occurrence(s) of pattern in it is needed
+
+Enter the search phrase:
+The search phrase entered is: relatively sm.
+The phrase relatively sm occurs in the following sentences!
+.....ttern, which is relatively small, in a text, which.....
+.....ttern, which is relatively small, in a text, which.....
+.....ttern, which is relatively small, in a text, which.....

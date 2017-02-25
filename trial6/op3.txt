@@ -1,0 +1,54 @@
+Enter File Name:
+The File Name entered is:morrison.txt.
+
+The number of characters read : 2663
+
+The total number of unique words are : 440
+28
+Enter the search word:
+The search word entered is: girlfriend.
+The word occurs at following indexes and in the following sentences!
+17->
+
+The Case:  During the summer of 1971, Jim Morrison and his girlfriend Pamela
+Courson went to Paris for a vacation
+37->  On July 5th Morrison was discovered in
+the bathtub by his girlfriend dead of a heart attack at age 27Q
+134->
+
+        When Morrison's girlfriend filed the death certificate at the American
+embasy, she said that there were no living relatives, which meant that the
+funeral could take place with no one being notified
+420->  His girlfriend had been encouraging him to develop himself
+as a poet for years
+
+Enter the search phrase:
+The search phrase entered is: the death.
+The phrase "the death" occurs in "  After the death was declared,
+Morrison's road manager was the only person notified".
+
+The phrase "the death" occurs in "  After the death was declared,
+Morrison's road manager was the only person notified".
+
+The phrase "the death" occurs in "
+
+        No one knew who had signed the death certificate".
+
+The phrase "the death" occurs in "
+
+        When Morrison's girlfriend filed the death certificate at the American
+embasy, she said that there were no living relatives, which meant that the
+funeral could take place with no one being notified".
+
+The phrase "the death" occurs in "
+
+        When Morrison's girlfriend filed the death certificate at the American
+embasy, she said that there were no living relatives, which meant that the
+funeral could take place with no one being notified".
+
+The phrase "the death" occurs in "
+
+        When Morrison's girlfriend filed the death certificate at the American
+embasy, she said that there were no living relatives, which meant that the
+funeral could take place with no one being notified".
+

@@ -1,0 +1,20 @@
+Enter File Name:
+The File Name entered is:ip3.txt.
+
+The number of characters read : 13836
+
+The total number of unique words are : 2385
+233
+Enter the search word:
+The search word entered is: DNA.
+The word occurs at following indexes and in the following sentences!
+44->dimensional examples can be text editor and DNA analysiså
+61-> In the text editor we have 26 characters and some special symbols whereas in the DNA case we have four characters of A C G and T
+104-> In the DNA analysis a gene in a few hundred long and the human genome is about 3 billion long
+1108->There is clear trade
+1125->off between the simplicity and the fidelity achieved by an abstract model
+1168->and sometimes serious
+1760->based problems like sorting selection merging and many dataÜÉU
+1777->structure operations
+1820->not even other arithmetic operations
+

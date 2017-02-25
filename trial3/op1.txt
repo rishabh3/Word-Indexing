@@ -1,0 +1,7 @@
+Enter File Name:
+
+The number of characters read : 258
+
+The total number of unique words are : 50
+Enter the search word:
+There is no index where the word occur.

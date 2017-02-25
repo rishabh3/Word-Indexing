@@ -1,0 +1,1093 @@
+7984
+In mathematics and computer science, an algorithm (Listeni/ˈælɡərɪðəm/ AL-gə-ri-dhəm) is a self-contained step-by-step set of operations to be performed. Algorithms perform calculation, data processing, and/or automated reasoning tasks.
+
+An algorithm is an effective method that can be expressed within a finite amount of space and time[1] and in a well-defined formal language[2] for calculating a function.[3] Starting from an initial state and initial input (perhaps empty),[4] the instructions describe a computation that, when executed, proceeds through a finite[5] number of well-defined successive states, eventually producing "output"[6] and terminating at a final ending state. The transition from one state to the next is not necessarily deterministic; some algorithms, known as randomized algorithms, incorporate random input.[7]
+
+The concept of algorithm has existed for centuries; however, a partial formalization of what would become the modern algorithm began with attempts to solve the Entscheidungsproblem (the "decision problem") posed by David Hilbert in 1928. Subsequent formalizations were framed as attempts to define "effective calculability"[8] or "effective method";[9] those formalizations included the Gödel–Herbrand–Kleene recursive functions of 1930, 1934 and 1935, Alonzo Church's lambda calculus of 1936, Emil Post's "Formulation 1" of 1936, and Alan Turing's Turing machines of 1936–7 and 1939. Giving a formal definition of algorithms, corresponding to the intuitive notion, remains a challenging problem.[10]
+Etymologically, the word 'algorithm' is a combination of the Latin word algorismus, named after Al-Khwarizmi, a 9th century Persian mathematician.,[11] and the Greek word arithmos, i.e. αριθμός, meaning "number". In English, it was first used in about 1230 and then by Chaucer in 1391. English adopted the French term, but it wasn't until the late 19th century that "algorithm" took on the meaning that it has in modern English.
+
+Another early use of the word is from 1240, in a manual titled Carmen de Algorismo composed by Alexandre de Villedieu. It begins thus:
+
+    Haec algorismus ars praesens dicitur, in qua / Talibus Indorum fruimur bis quinque figuris.
+
+which translates as:
+
+    Algorism is the art by which at present we use those Indian figures, which number two times five.
+
+The poem is a few hundred lines long and summarizes the art of calculating with the new style of Indian dice, or Talibus Indorum, or Hindu numerals.
+
+An informal definition could be "a set of rules that precisely defines a sequence of operations."[12] which would include all computer programs, including programs that do not perform numeric calculations. Generally, a program is only an algorithm if it stops eventually.[13]
+
+A prototypical example of an algorithm is the Euclidean algorithm to determine the maximum common divisor of two integers; an example (there are others) is described by the flow chart above and as an example in a later section.
+
+Boolos & Jeffrey (1974, 1999) offer an informal meaning of the word in the following quotation:
+
+    No human being can write fast enough, or long enough, or small enough† ( †"smaller and smaller without limit ...you'd be trying to write on molecules, on atoms, on electrons") to list all members of an enumerably infinite set by writing out their names, one after another, in some notation. But humans can do something equally useful, in the case of certain enumerably infinite sets: They can give explicit instructions for determining the nth member of the set, for arbitrary finite n. Such instructions are to be given quite explicitly, in a form in which they could be followed by a computing machine, or by a human who is capable of carrying out only very elementary operations on symbols.[14]
+
+An "enumerably infinite set" is one whose elements can be put into one-to-one correspondence with the integers. Thus, Boolos and Jeffrey are saying that an algorithm implies instructions for a process that "creates" output integers from an arbitrary "input" integer or integers that, in theory, can be arbitrarily large. Thus an algorithm can be an algebraic equation such as y = m + n – two arbitrary "input variables" m and n that produce an output y. But various authors' attempts to define the notion indicate that the word implies much more than this, something on the order of (for the addition example):
+
+    Precise instructions (in language understood by "the computer")[15] for a fast, efficient, "good"[16] process that specifies the "moves" of "the computer" (machine or human, equipped with the necessary internally contained information and capabilities)[17] to find, decode, and then process arbitrary input integers/symbols m and n, symbols + and = ... and "effectively"[18] produce, in a "reasonable" time,[19] output-integer y at a specified place and in a specified format.
+
+The concept of algorithm is also used to define the notion of decidability. That notion is central for explaining how formal systems come into being starting from a small set of axioms and rules. In logic, the time that an algorithm requires to complete cannot be measured, as it is not apparently related with our customary physical dimension. From such uncertainties, that characterize ongoing work, stems the unavailability of a definition of algorithm that suits both concrete (in some sense) and abstract usage of the term.
+Algorithms are essential to the way computers process data. Many computer programs contain algorithms that detail the specific instructions a computer should perform (in a specific order) to carry out a specified task, such as calculating employees' paychecks or printing students' report cards. Thus, an algorithm can be considered to be any sequence of operations that can be simulated by a Turing-complete system. Authors who assert this thesis include Minsky (1967), Savage (1987) and Gurevich (2000):
+
+    Minsky: "But we will also maintain, with Turing . . . that any procedure which could "naturally" be called effective, can in fact be realized by a (simple) machine. Although this may seem extreme, the arguments . . . in its favor are hard to refute".[20]
+
+    Gurevich: "...Turing's informal argument in favor of his thesis justifies a stronger thesis: every algorithm can be simulated by a Turing machine ... according to Savage [1987], an algorithm is a computational process defined by a Turing machine".[21]
+
+Typically, when an algorithm is associated with processing information, data are read from an input source, written to an output device, and/or stored for further processing. Stored data are regarded as part of the internal state of the entity performing the algorithm. In practice, the state is stored in one or more data structures.
+
+For some such computational process, the algorithm must be rigorously defined: specified in the way it applies in all possible circumstances that could arise. That is, any conditional steps must be systematically dealt with, case-by-case; the criteria for each case must be clear (and computable).
+
+Because an algorithm is a precise list of precise steps, the order of computation is always crucial to the functioning of the algorithm. Instructions are usually assumed to be listed explicitly, and are described as starting "from the top" and going "down to the bottom", an idea that is described more formally by flow of control.
+
+So far, this discussion of the formalization of an algorithm has assumed the premises of imperative programming. This is the most common conception, and it attempts to describe a task in discrete, "mechanical" means. Unique to this conception of formalized algorithms is the assignment operation, setting the value of a variable. It derives from the intuition of "memory" as a scratchpad. There is an example below of such an assignment.
+
+For some alternate conceptions of what constitutes an algorithm see functional programming and logic programming.
+	7984
+'algorithm'				234.
+
+1				55.
+
+10				230.
+
+11				252.
+
+1230				270,403.
+
+1240				310.
+
+1391				276,429.
+
+14				602.
+
+15				713.
+
+16				719.
+
+17				740.
+
+18				758.
+
+1928				166.
+
+1930				190.
+
+1934				191,203.
+
+1935				193.
+
+1936				199,205,764.
+
+19367				212.
+
+1939				214.
+
+1967				934.
+
+1974				471.
+
+1987				936,1006.
+
+1999				472.
+
+19th				288.
+
+2				63.
+
+2000				939,980.
+
+21				1018.
+
+3				68.
+
+4				79.
+
+5				92.
+
+6				102.
+
+7				131.
+
+8				177.
+
+9				181.
+
+9th				248.
+
+AL				10.
+
+Alan				207,245.
+
+Alexandre				320.
+
+Algorismo				317,342.
+
+Algorithms				27,863.
+
+Alonzo				194.
+
+Although				966.
+
+An				37,430.
+
+Another				302,387,603.
+
+Authors				927.
+
+Because				1121.
+
+Boolos				469,623.
+
+But				533,679,941.
+
+Carmen				315.
+
+Chaucer				274.
+
+Church's				195.
+
+David				163.
+
+Emil				200.
+
+English				263,277,301.
+
+Entscheidungsproblem				157.
+
+Etymologically				231.
+
+Euclidean				438.
+
+Formulation				202,1074,1247.
+
+French				280.
+
+From				835.
+
+GdelHerbrandKleene				186.
+
+Generally				418.
+
+Giving				215.
+
+Greek				255.
+
+Gurevich				938,981.
+
+Haec				326.
+
+Hilbert				164.
+
+Hindu				385.
+
+In				1,262,1062.
+
+Indian				353,379.
+
+Indorum				334,383,811.
+
+Instructions				1144.
+
+It				323,1228.
+
+Jeffrey				470,625.
+
+Khwarizmi				246.
+
+Latin				240.
+
+Listeni				8.
+
+Many				872.
+
+Minsky				933,940.
+
+No				484.
+
+Persian				250.
+
+Post's				201.
+
+Precise				705.
+
+Savage				935,1005.
+
+So				1177.
+
+Starting				69.
+
+Stored				1046.
+
+Subsequent				167.
+
+Such				565.
+
+Talibus				333,382.
+
+That				790,1098.
+
+The				110,132,360,777.
+
+There				1238.
+
+They				548.
+
+This				1194.
+
+Thus				622,654,906.
+
+Turing's				208,209,924,947,982,1001,1016.
+
+Typically				1019.
+
+Unique				1211.
+
+Villedieu				322.
+
+about				269.
+
+above				460.
+
+abstract				858.
+
+according				1003.
+
+addition				703.
+
+adopted				278.
+
+after				244,528.
+
+algebraic				660.
+
+algorismus				242,327,574.
+
+algorithm				7,38,135,227,435,583,588,656,780,817,849,908,1008,1022,1061,1123,1143,1186.
+
+algorithms				123,127,150,220,291,312,424,439,630,876,995,1080,1217,1255.
+
+all				407,515,634,1092.
+
+also				782,944.
+
+alternate				1249.
+
+always				1136.
+
+amount				50,58,66,83,90,363,715.
+
+and				3,6,15,32,40,48,53,56,71,74,103,106,141,192,206,213,216,236,253,271,368,423,434,449,461,463,474,498,518,624,629,641,672,738,744,752,755,756,761,769,772,774,809,857,907,937,1040,1119,1152,1160,1185,1200,1240,1254,1259.
+
+another				529,655,659,676,804,816,1007,1021,1166,1245.
+
+any				914,949,1032,1037,1100,1122.
+
+apparently				828.
+
+applies				1090.
+
+arbitrarily				652.
+
+arbitrary				562,642,668,747,846,963.
+
+are				452,567,626,864,882,976,1029,1048,1145,1153.
+
+arguments				972,984,991,1000,1010,1015.
+
+arise				1097.
+
+arithmos				257,392,887,893,1125.
+
+ars				328,399,923.
+
+art				345,371,419,1205.
+
+as				125,171,341,462,663,824,897,1155,1226.
+
+assert				929,1050,1235,1236.
+
+assignment				1220,1246.
+
+associated				1024.
+
+assumed				1147,1188.
+
+at				105,348,466.
+
+atoms				510.
+
+attempts				153,172,247,682,768,1202.
+
+authors'				681.
+
+automated				34.
+
+axioms				808.
+
+be				25,45,391,612,960.
+
+become				147,569,651,658.
+
+began				151,503,580,822,954,997,1082,1104,1149.
+
+begins				324.
+
+being				486,801,910,913,920,1117.
+
+below				1242.
+
+bis				336.
+
+both				852.
+
+bottom				1165.
+
+but				282.
+
+by				19,162,273,319,346,456,522,582,587,710,922,962,999,1014,1109,1173.
+
+calculability				176.
+
+calculating				65,373,898.
+
+calculation				29.
+
+calculations				417.
+
+calculus				197.
+
+called				955.
+
+can				44,487,535,549,611,650,657.
+
+cannot				821,909,919,957,996.
+
+capabilities				739.
+
+capable				592.
+
+cards				905.
+
+carrying				594,891.
+
+case				542,1108,1110,1115.
+
+central				793.
+
+centuries				139.
+
+century				249,289.
+
+certain				544.
+
+challenging				228.
+
+characterize				839.
+
+chart				459.
+
+circumstances				1094.
+
+clear				1118.
+
+combination				237.
+
+come				799.
+
+common				444,1198.
+
+complete				820,925.
+
+composed				318.
+
+computable				1120.
+
+computation				84.
+
+computational				1011,1077,1134.
+
+computer				4,408,712,727,873,883.
+
+computers				869.
+
+computing				584.
+
+concept				133,778.
+
+conception				1199,1214.
+
+conceptions				1250.
+
+concrete				853.
+
+conditional				1101.
+
+considered				911.
+
+constitutes				1253.
+
+contained				17,736,875.
+
+control				1176.
+
+correspondence				618.
+
+corresponding				221.
+
+could				390,579,952,1096.
+
+creates				637.
+
+criteria				1112.
+
+crucial				1137.
+
+customary				832.
+
+data				30,871,1028,1047,1072.
+
+dealt				1106.
+
+decidability				789.
+
+decision				159,321.
+
+decode				743.
+
+defined				60,96,174,684,785,1013,1084.
+
+defines				398.
+
+definition				218,316,389,847.
+
+derives				1229.
+
+describe				82.
+
+described				455,1154,1170,1204.
+
+detail				878.
+
+determine				441.
+
+determining				554.
+
+deterministic				121.
+
+device				1039.
+
+dhm				13.
+
+dice				380.
+
+dicitur				330.
+
+dimension				834.
+
+discrete				1208.
+
+discussion				1180.
+
+divisor				445.
+
+do				413,536.
+
+down				1162.
+
+each				1114.
+
+early				303.
+
+effective				41,175,179,956.
+
+effectively				757.
+
+efficient				717.
+
+electrons				512.
+
+elementary				598.
+
+elements				610.
+
+employees'				899.
+
+empty				78.
+
+ending				108,259.
+
+enough				490,493,496.
+
+entity				1058.
+
+enumerably				519,545,604.
+
+equally				538.
+
+equation				661.
+
+equipped				731.
+
+essential				865.
+
+eventually				99,428.
+
+every				994.
+
+example				432,450,464,704,1241.
+
+executed				87.
+
+existed				137.
+
+explaining				795.
+
+explicit				551.
+
+explicitly				572,1151.
+
+expressed				46.
+
+extreme				970.
+
+fact				959.
+
+far				1178.
+
+fast				489,716.
+
+favor				975,986.
+
+few				364.
+
+figures				354.
+
+figuris				338.
+
+final				107.
+
+find				742.
+
+finite				49,91,563.
+
+first				266.
+
+five				359.
+
+flow				458,1174.
+
+followed				581.
+
+following				482.
+
+formal				61,64,138,633,714.
+
+formalization				143,217,701,797,1043,1183.
+
+formalizations				168,183,553,561,575,794,1113.
+
+formalized				1216.
+
+formally				1172.
+
+format				776.
+
+framed				170.
+
+from				70,112,309,640,803,1031,1157,1230.
+
+fruimur				335.
+
+function				67.
+
+functional				1257.
+
+functioning				1140.
+
+functions				188.
+
+further				1044.
+
+g				11.
+
+give				550.
+
+given				570.
+
+going				1161.
+
+good				718.
+
+hard				977.
+
+has				136,298,1187.
+
+his				988.
+
+however				140,796.
+
+human				485,589.
+
+humans				534,730.
+
+hundred				365.
+
+idea				1167.
+
+if				425.
+
+imperative				1192.
+
+implies				631,691.
+
+in				57,854,886,958,973.
+
+included				184,406,465,480,932,985,1068.
+
+including				410,1091.
+
+incorporate				128,165,1086.
+
+indicate				687.
+
+infinite				520,546,605,648.
+
+informal				388,475,573,576,983.
+
+information				737,1027.
+
+initial				72,75,331,530,540.
+
+input				76,130,258,643,669,748,760,1033.
+
+instructions				81,275,311,552,566,632,706,773,881.
+
+integers				448,621,639,644,646,707,749,766.
+
+internally				735,1054,1207.
+
+into				614,800.
+
+intuition				1232.
+
+intuitive				224,268,299.
+
+is				14,39,118,235,308,343,362,421,436,454,591,607,781,792,826,1009,1023,1066,1099,1124,1135,1169,1195,1218,1239.
+
+it				264,283,297,426,825,1201.
+
+its				974,1089.
+
+justifies				990.
+
+known				124.
+
+lambda				196.
+
+language				62,708.
+
+large				653.
+
+late				287.
+
+later				467.
+
+limit				501.
+
+lines				366.
+
+list				514,1127.
+
+listed				1150.
+
+logic				812,1260.
+
+long				367,492.
+
+lrm				9.
+
+machines				210,585,728,965,1002,1017.
+
+maintain				945.
+
+manual				313,665.
+
+mathematician				251,671.
+
+mathematics				2.
+
+maximum				443,751.
+
+may				968.
+
+meaning				260,295,476.
+
+means				1210.
+
+measured				823.
+
+mechanical				1209.
+
+members				516,557.
+
+memory				1234.
+
+method				42,180.
+
+modern				149,300.
+
+molecules				508.
+
+more				693,1071,1171.
+
+most				1197.
+
+moves				724.
+
+much				692.
+
+must				1081,1103,1116.
+
+named				243.
+
+names				526,564.
+
+naturally				953.
+
+necessarily				120,666.
+
+necessary				734,753.
+
+new				376,673.
+
+next				117.
+
+not				119,827.
+
+notation				532.
+
+notion				225,414,686,787,791.
+
+nth				556.
+
+number				93,261,356.
+
+numerals				386.
+
+numeric				416.
+
+of				22,51,94,134,144,189,198,204,211,219,238,305,372,378,394,401,433,446,477,517,543,593,725,779,788,807,845,848,860,916,987,1141,1175,1215,1233,1243.
+
+offer				473,558,700,1052,1056,1128,1133,1181,1184,1191,1225,1251.
+
+one				113,293,507,527,600,608,615,617,697,1069.
+
+ongoing				840.
+
+only				422,509,511,596.
+
+operations				23,402,599,917,1221.
+
+or				33,178,381,384,491,494,586,645.
+
+order				699,729,889,901,1041,1070,1132.
+
+others				453.
+
+our				831.
+
+output				101,524,595,638,677,765,892,1038.
+
+partial				142,1051.
+
+paychecks				900.
+
+performed				26,28,415,885.
+
+performing				1059.
+
+perhaps				77.
+
+physical				833.
+
+place				771.
+
+poem				361.
+
+posed				161.
+
+possible				1093.
+
+practice				1063.
+
+praesens				329.
+
+precisely				397,1126,1129.
+
+premises				1190.
+
+present				349.
+
+printing				902.
+
+problem				160,229.
+
+procedure				950.
+
+proceeds				88.
+
+processing				31,635,720,746,870,1012,1026,1045,1078.
+
+produce				675,759.
+
+producing				100.
+
+programming				1193,1258,1261.
+
+programs				409,411,420,874.
+
+prototypical				431.
+
+put				613.
+
+qua				332.
+
+quinque				337.
+
+quite				571.
+
+quotation				483.
+
+randomized				126,129.
+
+read				1030.
+
+realized				961.
+
+reasonable				762.
+
+reasoning				35.
+
+recursive				187.
+
+refute				979.
+
+regarded				1049.
+
+related				829.
+
+remains				226.
+
+report				904.
+
+requires				818.
+
+ri				12.
+
+rigorously				1083.
+
+rules				395,810.
+
+saying				627.
+
+science				5.
+
+scratchpad				1237.
+
+section				468.
+
+seem				969,1256.
+
+self				16.
+
+sense				856.
+
+sequence				400,915.
+
+set				21,393,521,560,606,806.
+
+sets				547.
+
+setting				1222.
+
+should				884.
+
+simple				964.
+
+simulated				921,998.
+
+small				495,805.
+
+smaller				497,499.
+
+solve				155.
+
+some				122,531,1248.
+
+something				537,696,855,1075.
+
+source				1034.
+
+space				52.
+
+specific				880,888.
+
+specified				770,775,894,1085.
+
+specifies				722.
+
+starting				802,1156.
+
+state				73,114,1055.
+
+states				98,109,1065.
+
+stems				842.
+
+step				18,20.
+
+steps				1102,1130.
+
+stops				427.
+
+stored				1042,1067.
+
+stronger				992.
+
+structures				1073.
+
+students'				903.
+
+style				377.
+
+successive				97.
+
+such				662,836,896,1076,1244.
+
+suits				851.
+
+summarizes				369.
+
+symbols				601,750,754.
+
+systematically				1105.
+
+systems				798,926.
+
+tasks				36,895,1206.
+
+terminating				104,281,862.
+
+than				694.
+
+that				43,85,290,296,396,412,628,636,647,674,688,721,815,838,850,877,918,948,1095,1168.
+
+the				80,116,148,156,158,185,223,232,239,254,279,294,306,344,370,375,437,442,541,1053,1057.
+
+their				525,555,559,620,786,813,843,971.
+
+then				272,286,478,481,745,861,867,879.
+
+theory				649,685,689,698,702,723,726,733.
+
+there				451,457,711,1223.
+
+thesis				931,989,993,1131,1139,1142,1158,1182,1189,1196,1219,1231.
+
+they				578,1060,1064,1079,1087,1111,1164.
+
+this				695,930,967,1179,1213.
+
+those				182,352.
+
+through				89.
+
+thus				325.
+
+time				54,763,814.
+
+times				358.
+
+titled				314.
+
+to				24,115,154,173,222,440,784,819,890,1004,1036,1138,1163.
+
+took				292,505,513,568,616,683,741,866,912,978,1148,1203,1212.
+
+top				1159.
+
+transition				111.
+
+translates				340.
+
+trying				504.
+
+two				357,447,667.
+
+unavailability				844.
+
+uncertainties				837.
+
+understood				709.
+
+until				285.
+
+usage				859.
+
+used				267,304,351,783.
+
+useful				539.
+
+usually				1146.
+
+value				1224.
+
+variables				670,1227.
+
+various				680.
+
+very				597.
+
+was				265.
+
+wasn't				284.
+
+way				868,1088.
+
+well				59,95,350,942.
+
+were				169.
+
+what				145,1252.
+
+when				86,1020.
+
+which				339,347,355,404,577,951.
+
+who				590,928.
+
+whose				609.
+
+will				943.
+
+within				47,152,374,619,732,946,1107.
+
+without				500,830,1025.
+
+word				233,241,256,307,479,690.
+
+work				841.
+
+would				146,405.
+
+write				488,506.
+
+writing				523.
+
+written				1035.
+
+you'd				502,664,678,767.
+
+
+522

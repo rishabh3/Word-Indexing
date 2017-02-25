@@ -1,0 +1,15 @@
+Enter File Name:
+The File Name entered is:test.txt.
+
+The number of characters read : 263
+
+The total number of unique words are : 50
+Enter the search word:
+The search word entered is: am.
+The word occurs at following indexes and in the following sentences!
+9->Hello I am Rishabh
+50->. I am doing btech in Computer science
+
+Enter the search phrase:
+The search phrase entered is: I love.
+The phrase I love occurs in the following sentences!

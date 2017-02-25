@@ -1,0 +1,286 @@
+1214
+
+
+MODERN ACRONYMS
+---------------
+OINKs    one income, no kids
+DINKs    double income, no kids
+PINKs    private income, no kids
+LINCs    low income, nine cats
+NINKs    no income, nine kids
+DUDs     demographically undesirable divorcee
+PODs     punks on dope
+YAMs     young assholes on mopeds
+SLIFs    still living in the fifties
+SLITS    still living in the sixties
+SHITs    suburban heterosexuals in town to swing
+CANTs    corporate animals, no talent
+SIMPs    sexually inactive male professionals
+MIDGETs  mentally inferior divorced guys expecting terrific sex
+TOADs    tennis-obsessed advanced-degree holders
+RUGs     rich ugly guys
+DRUGs    dumb rich ugly guys
+SACs     sixties acid casualties
+SIPs     single-income pot smokers
+DORKs    damned overpaid Republican know-it-alls
+FDAs     former drug abusers
+YANKs    young assholes, no kids
+NERDs    nervous evangelicals, recently defrocked
+SOBs     son of the boss
+CPAs     car phone assholes
+WIGGs    women into gay guys
+BICEPs   bisexual college-educated professionals
+AWOLs    always working-out at lunch time
+SLIMEs   single lawyers into money and exercise
+RAMBOs   right-wingers afraid of Mexicans, blacks and Orientals
+	1214
+MODERN				1.
+
+ACRONYMS				2.
+
+OINKs				3.
+
+one				4,34,39.
+
+income				5,10,15,20,25,44,50,56,99.
+
+no				6,11,16,24,63,116.
+
+kids				7,12,17,27,117.
+
+DINKs				8.
+
+double				9.
+
+PINKs				13.
+
+private				14.
+
+LINCs				18.
+
+low				19.
+
+nine				21,26.
+
+cats				22.
+
+NINKs				23.
+
+DUDs				28.
+
+demographically				29.
+
+undesirable				30.
+
+divorcee				31.
+
+PODs				32.
+
+punks				33.
+
+dope				35.
+
+YAMs				36.
+
+young				37,114.
+
+assholes				38,115,131.
+
+mopeds				40.
+
+SLIFs				41.
+
+still				42,48.
+
+living				43,49.
+
+the				45,51,126.
+
+fifties				46.
+
+SLITS				47.
+
+sixties				52,94.
+
+SHITs				53.
+
+suburban				54.
+
+heterosexuals				55.
+
+town				57,58.
+
+swing				59.
+
+CANTs				60.
+
+corporate				61.
+
+animals				62.
+
+talent				64.
+
+SIMPs				65.
+
+sexually				66,77.
+
+inactive				67.
+
+male				68.
+
+professionals				69,141.
+
+MIDGETs				70.
+
+mentally				71.
+
+inferior				72.
+
+divorced				73.
+
+guys				74,87,92,136.
+
+expecting				75.
+
+terrific				76.
+
+TOADs				78.
+
+tennis				79.
+
+obsessed				80.
+
+advanced				81.
+
+degree				82.
+
+holders				83.
+
+RUGs				84.
+
+rich				85,90.
+
+ugly				86,91.
+
+DRUGs				88.
+
+dumb				89.
+
+SACs				93.
+
+acid				95.
+
+casualties				96.
+
+SIPs				97.
+
+single				98,150.
+
+pot				100.
+
+smokers				101.
+
+DORKs				102.
+
+damned				103.
+
+overpaid				104.
+
+Republican				105.
+
+know				106.
+
+it				107.
+
+alls				108.
+
+FDAs				109.
+
+former				110.
+
+drug				111.
+
+abusers				112.
+
+YANKs				113.
+
+NERDs				118.
+
+nervous				119.
+
+evangelicals				120.
+
+recently				121.
+
+defrocked				122.
+
+SOBs				123.
+
+son				124.
+
+of				125,160.
+
+boss				127.
+
+CPAs				128.
+
+car				129.
+
+phone				130.
+
+WIGGs				132.
+
+women				133.
+
+into				134,152.
+
+gay				135.
+
+BICEPs				137.
+
+bisexual				138.
+
+college				139.
+
+educated				140.
+
+AWOLs				142.
+
+always				143.
+
+working				144.
+
+out				145.
+
+at				146.
+
+lunch				147.
+
+time				148.
+
+SLIMEs				149.
+
+lawyers				151.
+
+money				153.
+
+and				154,163.
+
+exercise				155.
+
+RAMBOs				156.
+
+right				157.
+
+wingers				158.
+
+afraid				159.
+
+Mexicans				161.
+
+blacks				162.
+
+Orientals				164.
+
+
+Total number unique words found:124

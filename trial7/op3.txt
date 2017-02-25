@@ -1,0 +1,19 @@
+Enter File Name:
+The File Name entered is:ip3.txt.
+
+The number of characters read : 13824
+
+The total number of unique words are : 2325
+Enter the search word:
+The search word entered is: small.
+The word occurs at following indexes and in the following sentences!
+67->.... is relatively small, in a text, which is.....
+6202->.... is relatively small, in a text, which is.....
+9991->.... is relatively small, in a text, which is.....
+
+Enter the search phrase:
+The search phrase entered is: exponentially long.
+The phrase exponentially long occurs in the following sentences!
+.....mber that is exponentially long can be written out.....
+.....mber that is exponentially long can be written out.....
+.....mber that is exponentially long can be written out.....

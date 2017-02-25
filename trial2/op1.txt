@@ -1,0 +1,73 @@
+258
+Hello I am Rishabh.
+I study in Pes University.I am doing btech in Computer science.
+I learn C. I learn python.I learn Java.I study programming and android.I want to learn Machine learning.I like to play Football.
+I will graduate in 2019.
+That's it about me.
+	258
+Hello				1.
+
+I				2,5,10,17,20,23,26,31,37,42.
+
+am				3,11.
+
+Rishabh				4.
+
+study				6,27.
+
+in				7,14,45.
+
+Pes				8.
+
+University				9.
+
+doing				12.
+
+btech				13.
+
+Computer				15,19.
+
+science				16.
+
+learn				18,21,24,34.
+
+python				22.
+
+Java				25.
+
+programming				28.
+
+and				29.
+
+android				30.
+
+want				32.
+
+to				33,39.
+
+Machine				35.
+
+learning				36.
+
+like				38.
+
+play				40.
+
+Football				41.
+
+will				43.
+
+graduate				44.
+
+2019				46.
+
+That's				47.
+
+it				48.
+
+about				49.
+
+me				50.
+
+
+Total number unique words found:32

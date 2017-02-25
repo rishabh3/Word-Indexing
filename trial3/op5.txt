@@ -1,0 +1,7 @@
+Enter File Name:
+
+The number of characters read : 6363
+
+The total number of unique words are : 1027
+Enter the search word:
+504,527,548,559,655,677,715,757,823,869,897,928,998,1010,

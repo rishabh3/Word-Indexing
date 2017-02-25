@@ -1,0 +1,17 @@
+Enter File Name:
+The File Name entered is:ip3.txt.
+
+The number of characters read : 13836
+
+The total number of unique words are : 2385
+118
+Enter the search word:
+The search word entered is: small.
+The word occurs at following indexes and in the following sentences!
+11->﻿Pattern matching is to find a pattern, which is relatively small, in a text, which is supposed to be very large
+1075-> In reality, there is a memory hierarchy comprising of registers, several levels of cache, main memory and finally the disks
+1727-> For these problems, we often count only the number of comparisons (not even other arithmetic operations) without bothering about the length of the operands involved
+
+Enter the search phrase:
+The search phrase entered is: exponentially long.
+No occurences were found!

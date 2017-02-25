@@ -1,0 +1,14 @@
+Enter File Name:
+The File Name entered is:ip1.txt.
+
+The number of characters read : 3077
+
+The total number of unique words are : 513
+Enter the search word:
+The search word entered is: matching.
+The word occurs at following indexes and in the following sentences!
+18->....﻿Pattern matching is to .....
+702->.... is a pattern matching in computer vision......
+1059->.... the text, and matching process starts......
+1156->.... and a new matching process starts, and.....
+

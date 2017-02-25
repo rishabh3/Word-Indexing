@@ -1,0 +1,21 @@
+Enter File Name:
+The File Name entered is:test.txt.
+
+The number of characters read : 263
+
+The total number of unique words are : 50
+Enter the search word:
+The search word entered is: me.
+The word occurs at following indexes and in the following sentences!
+261->.... it about me.
+.....
+
+Enter the search phrase:
+The search phrase entered is: learn python.
+The phrase learn python occurs at following indexes and in the following sentences!
+python..... doing btech in Computer science.
+I learn C. I learn python. I learn Java. I stu.....
+python.....h in Computer science.
+I learn C. I learn python. I learn Java. I study programm.....
+python.....ience.
+I learn C. I learn python. I learn Java. I study programming and android......

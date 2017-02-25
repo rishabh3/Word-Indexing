@@ -1,0 +1,112 @@
+Scilab is a programming language associated with a rich collection of numerical
+algorithms covering many aspects of scientific computing problems. From the software
+point of view, Scilab is an interpreted language. This generally allows to get faster
+development processes, because the user directly accesses a high-level language, with
+a rich set of features provided by the library. The Scilab language is meant to be
+extended so that user-defined data types can be defined with possibly overloaded
+operations. Scilab users can develop their own modules so that they can solve their
+particular problems. The Scilab language allows to dynamically compile and link other
+languages such as Fortran and C: this way, external libraries can be used as if they were
+a part of Scilab built-in features. Scilab also interfaces LabVIEW, a platform and
+development environment for a visual programming language from National
+Instruments. From the license point of view, Scilab is a free software in the sense that
+the user does not pay for it and Scilab is an open source software, provided under the
+Cecill license. The software is distributed with source code, so that the user has an access
+to Scilab’s most internal aspects. Most of the time, the user downloads and installs a
+binary version of Scilab, since the Scilab consortium provides Windows, Linux and Mac
+OS executable versions. Online help is provided in many local languages. From the
+scientific point of view, Scilab comes with many features. At the very beginning of
+Scilab, features were focused on linear algebra. But, rapidly, the number of features
+extended to cover many areas of scientific computing.
+The following is a short list of its capabilities:
+• Linear algebra, sparse matrices
+• Polynomials and rational functions
+• Interpolation, approximation
+• Linear, quadratic and non-linear optimization
+• Ordinary Differential Equation solver and Differential Algebraic Equations solver
+• Classic and robust control, Linear Matrix Inequality optimization
+• Differentiable and non-differentiable optimization
+• Signal processing
+• Statistics
+6Scilab provides many graphics features including a set of plotting functions which allow
+us to create 2D and 3D plots as well as user interfaces. The Xcos environment provides
+a hybrid dynamic systems modeler and simulator.
+How to get and install Scilab
+Whatever the platform is (i.e. Windows, Linux or Mac), Scilab binaries can be
+downloaded directly from the Scilab homepage http://www.scilab.org or from the
+Download area http://www.scilab.org/download. Scilab binaries are provided for both
+32 and 64-bit platforms so that they match the target installation machine. Scilab can
+also be downloaded in source form, so that we can compile Scilab by ourselves and
+produce our own binary. Compiling Scilab and generating a binary is especially
+interesting when we want to understand or debug an existing feature, or when we want
+to add a new feature. To compile Scilab, some prerequisites binary files are necessary,
+which are also provided in the Download center. Moreover, a Fortran and a C compiler
+are required.
+Become familiar with Scilab
+The useful workspace in Scilab consists of several window:
+
+ 
+
+
+The console for making calculations
+The editor for writing programs
+The graphics windows for displaying graphics
+The embedded help
+The general environment and the console
+After double clicking the icon to launch Scilab, the Scilab environment by default
+consists of the following docked windows: The console, files and variables browsers
+and the command history. In the console, after the prompt
+-->
+Just type a command and press the Enter key (Windows and Linux) or the Return key
+(Mac OS X) in the keyboard to obtain the corresponding result.
+7The menu bar
+The menus listed below are particularly useful.
+Applications
+•
+•
+The command history allows us to find all the commands from previous
+sessions to the current session.
+The variables browser allows us to find all variables previously used during
+the current session.
+Edit
+Preferences (in Scilab menu under Mac OS X) allows us to set and customize colours,
+fonts and font size in the console and in the editor, which is very useful for screen
+projection. Clicking on Clear Console clears the entire content of the console. In this
+case, the command history is still available and calculations made during the session
+remain in memory. Commands that have been erased are still available through the
+keyboard’s arrow keys.
+The Editor
+Typing directly into the console has two disadvantages: it is not possible to save the
+commands and it is not easy to edit multiple lines of instruction. The editor is the
+appropriate tool to run multiple instructions.
+Opening the Editor
+To open the editor from the console, click on the first icon in the toolbar or on
+Applications  SciNotes in the menu bar. The editor opens with a default file named
+“Untitled 1 “.
+Saving
+Any file can be saved by clicking on File  Save as
+The extension “.sce “at the end of a file name will launch automatically Scilab when
+opening it (except under Linux and Mac OS X).
+Copying into the console, executing a program
+In clicking on Execute in the menu bar, three options are available:
+8• Execute “...file with no echo “(Ctrl+Shift+E under Windows and Linux, Cmd+Shift+
+E under Mac OS X): the file is executed without writing the program in the console
+(saving the file first is mandatory).
+• Execute “... file with echo “(Ctrl+L under Windows and Linux, Cmd+L under Mac
+OS X): rewrites the file into the console and executes it.
+• Execute “...until the caret, with echo “(Ctrl+E under Windows and Linux, Cmd+E
+under Mac OS X): rewrites the selection chosen with the mouse into the console and
+executes it or executes the file data until the caret position defined by the user.
+Standard copy/paste can also be used.
+The graphics window
+Opening a graphics window
+A graphics window opens automatically when making any plot. It is possible to plot
+curves, surfaces and sequences of points.
+Online help
+To access the online help, click on ? Scilab Help in the menu bar, or type in the
+console:
+ help
+To get help with any function, type help in the console followed by the name of the
+appropriate function. For example:
+ help sin
+displays help for sine function.

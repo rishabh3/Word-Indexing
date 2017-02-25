@@ -1,0 +1,13 @@
+Enter File Name:
+The File Name entered is:ip4.txt.
+
+The number of characters read : 13836
+
+The total number of unique words are : 2323
+Enter the search word:
+The search word entered is: selection.
+The word occurs at following indexes and in the following sentences!
+3029->.... sorting, selection, merging, and many.....
+9167->.... sorting, selection, merging, and many.....
+12960->.... sorting, selection, merging, and many.....
+

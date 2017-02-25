@@ -1,0 +1,18 @@
+Enter File Name:
+The File Name entered is:ip7.txt.
+
+The number of characters read : 67434
+
+The total number of unique words are : 10000
+1286
+Enter the search word:
+The search word entered is: Lorem.
+The word occurs at following indexes and in the following sentences!
+1->Lorem ipsum dolor sit amet consectetur adipiscing elit
+1201-> Lorem ipsum dolor sit amet consectetur adipiscing elit
+3644->Lorem ipsum dolor sit amet consectetur adipiscing elit
+3817-> Lorem ipsum dolor sit amet consectetur adipiscing elit
+4033-> Lorem ipsum dolor sit amet consectetur adipiscing elit
+6458-> Lorem ipsum dolor sit amet consectetur adipiscing elit
+8530-> Lorem ipsum dolor sit amet consectetur adipiscing elit
+

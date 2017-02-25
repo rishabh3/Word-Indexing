@@ -1,0 +1,19 @@
+Enter File Name:
+The File Name entered is:morrison.txt.
+
+The number of characters read : 2663
+
+The total number of unique words are : 440
+Enter the search word:
+The search word entered is: bathtub.
+The word occurs at following indexes and in the following sentences!
+199->.... in
+the bathtub by his girlfriend.....
+
+Enter the search phrase:
+The search phrase entered is: the death.
+The phrase the death occurs in the following sentences!
+.....y, no one else.  After the death was declared,
+Mo.....
+.....ne knew who had signed the death certificate.  Lat.....
+.....son's girlfriend filed the death certificate at th.....

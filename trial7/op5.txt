@@ -1,0 +1,13 @@
+Enter File Name:
+The File Name entered is:ip6.txt.
+
+The number of characters read : 6363
+
+The total number of unique words are : 1005
+Enter the search word:
+The search word entered is: algebra.
+The word occurs at following indexes and in the following sentences!
+1573->.... on linear algebra. But, rapidly, the.....
+1735->.... Linear algebra, sparse matrices
+•.....
+

@@ -1,0 +1,1016 @@
+9204
+﻿Pattern matching is to find a pattern, which is relatively small, in a text, which is supposed to be very large. Patterns and texts can be one-dimensional, or two dimensional. In the case of one-dimensional, examples can be text editor and DNA analysis. In the text editor, we have 26 characters and some special symbols, whereas in the DNA case, we have four characters of A, C, G, and T. In the text editor, a pattern is often a word, whose length is around 10, and the length of the text is a few hundred up to one million. In the DNA analysis, a gene in a few hundred long and the human genome is about 3 billion long. In the case of two-dimensional, the typical application is a pattern matching in computer vision. A pattern is about (100, 100) and text typically (1024,1024). Either one-dimensional or two-dimensional, the text is very large, and therefore a fast algorithm to find the occurrence(s) of pattern in it is needed. We start from a naive algorithm for one-dimensional. At first the pattern is set to the left end of the text, and matching process starts. After a mismatch is found, pattern is shifted one place right and a new matching process starts, and so on. The pattern and text are in arrays pat[1..m] and text[1..n] respectively. Although there are a few thousand variations of the computer with different archi-tectures and internal organization, it is best to think about them at the level of the assembly language. Despite architectural variations, the assembly level language sup- port is very similar - the major difference being in the number of registers and the word length of the machine. But these parameters are also in a restricted range of a factor of two, and hence asymptotically in the same ball park. In summary, think about any computer as a machine that supports a basic instruction set consisting of arithmetic and logical operations and memory accesses (including indirect addressing). We will avoid cumbersome details of the exact instruction set and assume realistically that any instruction of one machine can be simulated using a constant number of available instruction of another machine. Since analysis of algorithms involves counting the number of operations and not the exact timings (which could differ by an order of magnitude), the above simplification is justified. The careful reader would have noticed that during our detailed analysis of Method 3 in the previous sections, we were not simply counting the number of arithmetic operations but actually the number of bit-level operations. Therefore the cost of a multiplication or addition was not unity but proportional to the length of the input. Had we only counted the number of multiplications for computing xn, that would only be O(log n). This would indeed be the analysis in a uniform cost model where only the number of arithmetic (also logical) operations are counted and does not depend on the length of the operands. A very common us of this model is for comparison-based problems like sorting, selection, merging, and many data-structure operations. For these problems, we often count only the number of comparisons (not even other arithmetic operations) without bothering about the length of the operands involved. In other words, we implicitly assume O(1) cost for any comparison. This is not considered unreasonable since the size of the numbers involved in sorting do not increase during the course of the algorithm for majority of the commonly known sorting problems. On the other hand consider the following problem of repeated squaring n times starting with 2. The resultant is a number 22n which requires 2n bits to be represented. It will be very unreasonable to assume that a number that is exponentially long can be written out (or even stored) in O(n) time. Therefore the uniform cost model will not reflect any realistic setting for this problem. On the other extreme is the logarithmic cost model where the cost of an operation is proportional to length of the operands. This is very consistent with the physical world and also has close relation with the Turing Machine model which is a favorite of complexity theorists. Our analysis in the previous sections is actually done with this model in mind. It is not only the arithmetic operations but also the cost of memory access is proportional to the length of the address and the operand. The most commonly used model is something in between. We assume that for an input of size n, any operation involving operands of size log n 2 takes O(1) steps. This is justified as follows. All microprocessor chips have specialized hardware circuits for arithmetic operations like multiplication, addition, division etc. that take a fixed number of clock cycles when the operands fit into a word. The reason that log n is a natural choice for a word is that, even to address an input size n, you require log n bits of address space. The present high end microprocessor chips have typically 2-4 GBytes of RAM and about 64 bits word size - clearly 264 exceeds 4 GBytes. We will also use this model, popularly known as Random Access Machine (or RAM in short) except for problems that deal with numbers as inputs like multiplication in the previous section where we will invoke the log cost model. In the beginning, it is desirable that for any algorithm, you get an estimate of the maximum size of the numbers to ensure that operands do not exceed (log n) so that it is safe to use the RAM model.There is clear trade-off between the simplicity and the fidelity achieved by an abstract model. One of the obvious (and sometimes serious) drawback of the RAM model is the assumption of unbounded number of registers since the memory access cost is uniform. In reality, there is a memory hierarchy comprising of registers, several levels of cache, main memory and finally the disks. We incur a higher access cost as we go from registers towards the disk and for techological reason, the size of the faster memory is limited. There could be a disparity of 105 between the fastest and the slowest memory which makes the RAM model somewhat suspect for larger input sizes. This has been redressed by the external memory model. We are given a set of jobs J1,J2 ...Jn, their corresponding deadlines di for completion and the corresponding penalties pi if a job completes after deadlines. The jobs have unit processing time on a single available machine. We want to minimize the total penalty incurred by the jobs that are not completed before their deadlines. Stated otherwise, we want to maximize the penalty of the jobs that get completed before their deadlines. A set A of jobs is independent if there exists a schedule to complete all jobs in A without incurring any penalty. We will try to verify Property 2. Let A,B be two independent sets of jobs with |B| > |A|. We would like to show that for some job J ∈ B, {J}∪ A is independent. Let |A| = m < n = |B|. Start with any feasible schedules for A and B and compress them, i.e. remove any idle time between the jobs by transforming the schedule where there is no gap between the ﬁnish time of a job and start time of the next. This shifting to left does not aﬀect independence. Let us denote the (ordered) jobs in A by A1,A2 ...Am and the times for scheduling of jobs in A be d1,d2 ...dm respectively. Likewise, let the jobs in B be B1,B2 ...Bn and their scheduling times d. en move Aj to the same position as Bn (this doesn’t violate its deadline) creating a gap at the j-th position in A. We can now shift-to-left the jobs in A−Aj and now by ignoring the jobs Bn = Aj, we have one less job in A and B. We can renumber the jobs and are in a similar position as before. By applying this strategy inductively, either we succeed in adding a job from B to A without conﬂict or we are in a situation where A is empty and B is not so that we can now add without conﬂict. Nevertheless let us persist with greedy, and analyse what we can achieve. Note that the edges are chosen in decreasing order of weights such that the end-points have not been chosen previously. Let us deﬁne the subset of edges chosen by greedy as G and let us denote the optimal solution by O. Clarly w(O) ≥ w(G). Consider an edge (x,y)∈ O−G. Clearly, by the time the turn of (x,y) came, some edge(s) were already chosen by greedy that was incident on either x or y. Let e′ be such an edge and clearly w(e′) ≥ w(x,y) since it was chosen earlier. If there were two separate edges that were incident on x and y chosen earlier, let e′ have the larger weight. We can therefore claim the following For every edge (x,y) ∈ O − G, there is an edge, e(x,y) ∈ G− O whose weight is greater than w(x,y). Suppose e(x,y) = (x,u) where u 6= y. Note that there may be another edge (v,u)∈ O−G which could not be chosen by greedy because of e(x,y). In summary, an edge e ∈ G−O can block atmost two edges in O to be chosen and its weight is greater than or equal to both the blocked edges. This implies that the total weight of the edges in G is at least half that of the optimal weight. So greedy in this case has some guarantee about the solution even though it is not optimal.
+optimal
+	9204
+10				87.
+
+100				142,143,782.
+
+1024				147,148,230,234,563.
+
+105				1046.
+
+22n				620,779,856.
+
+26				52,614,1175.
+
+264				868.
+
+2n				623.
+
+3				119,418.
+
+4				857,870.
+
+64				863,1572.
+
+A				68,138,510,1147,1149,1164,1177,1187,1200,1204,1214.
+
+A1				1268,1279,1323.
+
+A2				1269,1348,1379,1389.
+
+AAj				1333.
+
+Access				882,1266.
+
+After				202.
+
+Aj				1302,1341.
+
+All				789.
+
+Although				237.
+
+Am				1270.
+
+At				185.
+
+B1				1292.
+
+B2				1293,1350,1377,1393.
+
+Bn				1294,1308,1340.
+
+But				296,1178,1186,1198,1207,1216,1290.
+
+By				1364.
+
+C				69.
+
+Clarly				1458.
+
+Clearly				1469.
+
+Consider				1463.
+
+DNA				44,61,104.
+
+Despite				268.
+
+Either				149.
+
+For				531,1540.
+
+G				70,1462.
+
+GBytes				858,871,1448,1546,1554.
+
+GO				1601,1635.
+
+Had				460.
+
+If				1513.
+
+In				32,46,73,102,122,318,556,911,994,1596.
+
+It				628,728.
+
+J1				1081.
+
+J2				1082.
+
+Jn				1083,1197,1199.
+
+Let				1176,1203,1259,1437,1495.
+
+Likewise				1285.
+
+Machine				705,883.
+
+Method				417.
+
+Nevertheless				1404.
+
+Note				1416,1574.
+
+O				475,562,781,1457.
+
+OG				1468,1583.
+
+On				599,650,667,1545,1555,1608.
+
+One				967.
+
+Our				714,1460.
+
+Pattern				1.
+
+Patterns				22.
+
+Property				1174.
+
+RAM				860,885,949,977,1057.
+
+Random				881.
+
+Since				377.
+
+So				1645.
+
+Start				1208.
+
+Stated				1130.
+
+Suppose				1564.
+
+T				72.
+
+The				222,405.
+
+Therefore				441,615,653,753,819,848,951,1040,1101.
+
+This				478,568,689,784,1065,1251,1625.
+
+Turing				704.
+
+We				176,345,762,872,1014,1074,1112,1169,1188,1324,1351,1534.
+
+a				6,13,806,1043,1157.
+
+about				118,141,259,321,549,618,817,825,829,862,1077,1653.
+
+above				401.
+
+abstract				965.
+
+accesses				341,741,990,1018.
+
+achieved				962,1415.
+
+actually				434,721.
+
+adding				1373.
+
+addition				448,801,1401.
+
+addressing				344,749,835,846.
+
+aect				1257.
+
+after				1099.
+
+algorithm				164,181,920.
+
+algorithms				380,590.
+
+all				1161.
+
+already				1483.
+
+also				300,495,698,736,874.
+
+analyse				1411.
+
+analysis				45,77,105,378,415,483,715,836,1598.
+
+and				23,43,54,71,81,88,95,113,144,160,162,179,198,203,213,219,224,232,251,289,310,336,339,355,387,500,526,697,750,861,959,971,1010,1028,1050,1090,1215,1217,1245,1271,1295,1334,1349,1356,1392,1410,1449,1501,1524,1612.
+
+another				375,396,680,766,923,964,1464,1579.
+
+any				322,359,566,661,771,919,1167,1210,1223,1499,1549.
+
+application				130,132,240.
+
+applying				1365.
+
+archi				249,636,1374,1386.
+
+architectural				269,709.
+
+are				226,239,299,498,1075,1124,1315,1357,1359,1384,1420.
+
+arithmetic				335,431,494,545,733,797,998.
+
+around				86,106,109,214,302,1016.
+
+arrays				228,306,1108.
+
+assembly				266,272,324,325,329,895,1096,1243.
+
+assume				356,561,634,763,787.
+
+assumption				981,1307,1447.
+
+asymptotically				312,368,880,1020,1362.
+
+at				261,485,1317.
+
+atmost				1604,1637.
+
+available				372,445,1110.
+
+avoid				347.
+
+ball				316.
+
+based				520.
+
+basic				330.
+
+be				19,26,40,365,474,1042.
+
+because				1591.
+
+been				1067,1280,1434.
+
+before				1127,1144,1179,1291,1363,1610.
+
+beginning				913.
+
+being				283,481,1497,1578,1587.
+
+best				256,626,630,643.
+
+between				761,956,1047,1226,1238.
+
+billion				120.
+
+bit				438.
+
+bits				624,844,864.
+
+block				1603.
+
+blocked				1623.
+
+bothering				548,1621.
+
+but				433,452,735.
+
+by				395,963,1069,1120,1229,1267,1336,1445,1456,1470,1485,1589.
+
+cache				1007.
+
+came				1478.
+
+can				25,39,364,642,1325,1352,1399,1414,1535,1602.
+
+careful				406.
+
+case				34,62,124,1649.
+
+characters				53,66.
+
+chips				791,853.
+
+choice				827.
+
+chosen				1421,1435,1444,1484,1511,1526,1588,1611.
+
+circuits				795.
+
+claim				1537.
+
+clearly				867,953,1502.
+
+clock				810.
+
+close				700.
+
+common				512.
+
+commonly				595,755.
+
+comparison				519.
+
+comparisons				541,567.
+
+completed				1126,1143.
+
+completes				1098,1160.
+
+completion				1089.
+
+complexity				712.
+
+compress				1218.
+
+comprising				1001.
+
+computer				136,246,323.
+
+computing				469.
+
+conict				1381,1403.
+
+considered				571,603.
+
+consistent				692.
+
+consisting				333.
+
+constant				369.
+
+corresponding				1085,1092.
+
+cost				443,487,564,656,674,678,738,909,991,1019.
+
+could				393,1041,1585.
+
+counted				463,499,536.
+
+counting				382,427.
+
+course				587.
+
+creating				1314.
+
+cumbersome				348.
+
+cycles				811.
+
+d1				1281.
+
+d2				1282.
+
+data				528.
+
+deadlines				1086,1100,1129,1146,1313.
+
+deal				892.
+
+decreasing				1423.
+
+dene				1439.
+
+denote				1261,1452.
+
+depend				503.
+
+desirable				916.
+
+detailed				414.
+
+details				349.
+
+difference				282.
+
+different				248,394.
+
+dimensional				28,31,37,127,151,154,184.
+
+disks				1013,1027.
+
+disparity				1044.
+
+division				802,1087.
+
+dm				1283.
+
+does				501,582,1255.
+
+doesnt				1310.
+
+done				722,936.
+
+drawback				974.
+
+during				412,585,1299.
+
+earlier				1512,1527.
+
+edges				1419,1443,1465,1480,1500,1518,1542,1550,1580,1599,1606,1624,1633.
+
+editor				42,49,76.
+
+either				1369,1491.
+
+empty				1391.
+
+end				194,851,1430.
+
+ensure				933,1300.
+
+equal				1619.
+
+estimate				924,1221.
+
+etc				803.
+
+even				543,647,833,1656.
+
+every				1541.
+
+exact				352,390,1551.
+
+examples				38,1565,1593,1600.
+
+exceeds				869,938,1529.
+
+except				888,1496,1504.
+
+exists				1156.
+
+exponentially				640.
+
+external				1071.
+
+extreme				670.
+
+factor				307.
+
+fast				163.
+
+faster				1036.
+
+fastest				1049.
+
+favorite				710.
+
+feasible				1211.
+
+few				96,110,241.
+
+fidelity				961.
+
+finally				1011.
+
+find				5,166.
+
+first				186.
+
+fit				815.
+
+fixed				807.
+
+following				605,1539.
+
+follows				788.
+
+for				182,468,518,565,591,664,765,796,828,889,918,1029,1061,1088,1194,1213,1274.
+
+found				206.
+
+four				65.
+
+from				178,1023,1376.
+
+gap				1237,1316.
+
+gene				107.
+
+genome				116.
+
+get				922,1142.
+
+given				1076.
+
+go				1022.
+
+greater				1559,1616.
+
+greedy				1409,1446,1486,1590,1646.
+
+guarantee				1652.
+
+half				1639.
+
+hand				602.
+
+hardware				794.
+
+has				699,1066,1650.
+
+have				51,64,409,792,854,1103,1343,1432,1530.
+
+hence				311.
+
+hierarchy				1000.
+
+high				850.
+
+higher				1017.
+
+human				115.
+
+hundred				97,111.
+
+idle				1224.
+
+if				1095,1154.
+
+ignoring				1337.
+
+implicitly				560.
+
+implies				1626.
+
+in				12,59,108,135,172,227,301,313,1422.
+
+incident				1489,1521.
+
+including				342.
+
+increase				584,1385.
+
+incur				1015,1322,1332,1347,1358,1372.
+
+incurred				1119,1163,1289.
+
+incurring				1166,1220,1278.
+
+indeed				480,1265.
+
+independence				1258.
+
+independent				1153,1181,1202.
+
+indirect				343,419,484,886,899,1647.
+
+inductively				1368,1634.
+
+input				459,767,837,1063,1607.
+
+inputs				896.
+
+instruction				331,353,360,373.
+
+internal				252,284,716,726.
+
+into				816.
+
+invoke				906.
+
+involved				555,579,580,649.
+
+involves				381,760.
+
+involving				773.
+
+is				3,9,16,79,85,94,117,131,140,157,174,189,205,208,255,277,403,517,569,617,639,671,682,690,708,720,729,742,758,785,824,831,915,944,952,979,992,997,1038,1152,1201,1235,1390,1394,1548,1558,1615,1636,1659.
+
+it				173,254,914,943,1658.
+
+its				1312,1509,1613.
+
+jobs				1080,1097,1102,1122,1140,1151,1162,1184,1196,1228,1244,1264,1277,1288,1331,1339,1346,1355,1375.
+
+justified				404,786,1319.
+
+known				596,879.
+
+language				267,274.
+
+large				21,159.
+
+larger				1062,1532.
+
+least				1638.
+
+left				193,1254,1329.
+
+length				84,90,292,456,506,551,685,746.
+
+less				1345.
+
+let				1286,1405,1450,1528.
+
+level				263,273,439.
+
+levels				1005.
+
+like				522,799,897,1190.
+
+limited				1039.
+
+logarithmic				673,908,939.
+
+logical				337,476,496,777,822,842.
+
+long				112,121,641.
+
+machine				295,326,363,376,1111.
+
+magnitude				399.
+
+main				1008.
+
+major				281.
+
+majority				592.
+
+makes				1055.
+
+many				527.
+
+matching				2,134,199,216.
+
+maximize				1135.
+
+maximum				927,1205.
+
+may				1577.
+
+memory				340,740,989,999,1009,1037,1053,1072.
+
+merging				525.
+
+microprocessor				790,852.
+
+million				101,231.
+
+mind				727.
+
+minimize				1115.
+
+mismatch				204.
+
+model				488,516,657,675,706,725,757,877,910,950,966,978,1058,1073.
+
+most				754.
+
+move				1301.
+
+multiplication				446,800.
+
+multiplications				467,898.
+
+naive				180.
+
+natural				826,1206.
+
+needed				175,235.
+
+new				215.
+
+next				1250.
+
+nish				1240.
+
+not				388,450,477,502,542,570,583,610,659,730,839,843,937,940,1125,1236,1256,1433,1586.
+
+noticed				410,425,823,1395,1660.
+
+now				1326,1335,1400.
+
+number				286,370,384,429,436,465,492,539,619.
+
+numbers				578,637,651,770,778,808,894,931,984.
+
+obvious				970.
+
+occurrence				168.
+
+of				35,67,91,125,195,244,264,293,334,350,361,371,374,379,437,444,457,466,540,576,593,679,686,711,768,775,809,859,985,1002,1425,1631,1641.
+
+off				955,968,1006,1045,1183,1242,1248,1276,1442,1475,1592.
+
+often				80,170,287,305,308,385,398,416,430,493,507,514,535,552,588,607,739,747,845,925,929,975,982,1034,1079,1138,1150.
+
+one				27,36,100,150,183,210,221,362,504,1344,1490,1522.
+
+only				462,473,490,537,731,1107.
+
+operands				509,554,688,752,774,814,935.
+
+operations				338,386,432,440,497,530,546,681,734,772,798.
+
+optimal				1454,1643,1661,1662.
+
+or				29,152,447,646,884.
+
+order				397,1424,1618.
+
+ordered				1263,1382.
+
+organization				253,1493.
+
+other				544,557,601,669.
+
+otherwise				1131.
+
+our				413.
+
+out				645.
+
+parameters				298.
+
+park				317.
+
+pattern				7,78,133,139,171,188,207,223,229.
+
+penalties				1093.
+
+penalty				1118,1137,1168.
+
+persist				1407.
+
+physical				695.
+
+pi				1094.
+
+place				211.
+
+points				1431.
+
+popularly				878.
+
+port				276.
+
+position				1306,1321,1361.
+
+present				849.
+
+previous				421,718,901.
+
+previously				1436.
+
+problems				521,533,598,606,666,890.
+
+process				200,217.
+
+processing				1105.
+
+proportional				453,683,743.
+
+range				304.
+
+reader				407.
+
+realistically				357,662.
+
+reality				995.
+
+reason				820,1031.
+
+redressed				1068.
+
+reflect				660.
+
+registers				288,986,1003,1024.
+
+relation				701.
+
+relatively				10.
+
+remove				1222.
+
+renumber				1353.
+
+repeated				608.
+
+represented				627.
+
+requires				622,841.
+
+respectively				236,1284.
+
+restricted				303.
+
+resultant				616.
+
+right				212.
+
+safe				945.
+
+same				315,1305.
+
+schedule				1158,1232.
+
+schedules				1212.
+
+scheduling				1275,1297.
+
+sections				422,719,902.
+
+selection				524.
+
+separate				1517.
+
+serious				973.
+
+set				190,332,354,1078,1148.
+
+sets				1182.
+
+setting				663.
+
+several				1004.
+
+shifted				209.
+
+shifting				1252,1327.
+
+short				887.
+
+show				1192.
+
+similar				279,1360.
+
+simplicity				958.
+
+simplification				402.
+
+simply				426.
+
+simulated				366.
+
+since				573,987,1508.
+
+single				1109.
+
+situation				1387.
+
+size				575,769,776,838,866,928,1033.
+
+sizes				1064.
+
+slowest				1052.
+
+small				11.
+
+solution				1455,1655.
+
+some				55,220,941,1479.
+
+something				759,1651.
+
+sometimes				972,1396.
+
+somewhat				1059,1195.
+
+sorting				523,581,597.
+
+space				847.
+
+special				56.
+
+specialized				793.
+
+squaring				609.
+
+start				177,1246.
+
+starting				612.
+
+starts				201,218.
+
+steps				783.
+
+stored				648.
+
+strategy				1367.
+
+structure				529.
+
+subset				1441.
+
+succeed				1371.
+
+such				1427,1498.
+
+summary				319,1597.
+
+supports				328.
+
+supposed				17,169,275.
+
+suspect				1060.
+
+symbols				57,1481.
+
+takes				780,805.
+
+techological				1030.
+
+tectures				250.
+
+text				14,41,156,197.
+
+texts				24,48,75,93,145,225,233.
+
+than				1560,1617.
+
+that				327,358,411,471,635,638,764,804,821,832,891,917,934,942,1123,1141,1193,1397,1417,1428,1487,1519,1575,1627,1640.
+
+the				33,47,60,74,89,92,103,114,123,128,155,167,245,280,285,290,294,574,900,907,912,957,1418,1440,1453.
+
+their				1084,1128,1145,1287,1296,1304,1338,1354,1429.
+
+them				260,262,265,271,314,383,389,420,435,442,1116,1136,1139,1219,1227,1262,1272,1318,1320,1330,1622,1628,1632,1642,1654.
+
+theorists				713,717,732,737,745,748,751,813,1070,1091,1121,1231,1239,1249,1471,1473,1531,1538.
+
+therefore				161,187,192,196,238,351,400,428,455,458,464,482,538,550,553,604,654,668,672,677,687,694,703,976,980,996,1012,1032,1035,1048,1051,1056,1155,1234,1514,1536,1547,1576.
+
+these				297,491,505,508,532,577,586,589,594,600,926,930,948,960,969,988,1026.
+
+think				258,320.
+
+this				515,665,724,876,1309,1366,1648.
+
+though				1657.
+
+thousand				242.
+
+times				611,652,1106,1225,1241,1247,1273,1298,1472.
+
+timings				391.
+
+to				4,18,99,165,191,257,454,625,633,684,744,834,932,946,1159,1303.
+
+total				1117,1134,1172,1328,1378,1609,1620,1629.
+
+towards				1025,1114,1191,1253.
+
+trade				954.
+
+transforming				1230.
+
+try				1171.
+
+turn				1474.
+
+two				30,126,153,309,1180,1516,1605.
+
+typical				129.
+
+typically				146,855.
+
+unbounded				983.
+
+uniform				486,655,993.
+
+unity				451,1104,1569,1571,1582.
+
+unreasonable				572,632.
+
+up				98.
+
+used				756,875,947,1406.
+
+using				367,513,1260,1438,1451.
+
+variations				243,270.
+
+verify				1173.
+
+very				20,158,278,511,631,691,1581.
+
+violate				1311.
+
+vision				137.
+
+want				1113,1133.
+
+was				449,1488,1510.
+
+we				50,63,423,461,1021,1342,1370,1383,1398.
+
+weights				1426,1533,1557,1614,1630,1644.
+
+were				424,534,559,904,1132,1413,1482,1515,1520.
+
+what				1412,1503,1505,1561.
+
+when				812,1459,1461.
+
+whereas				58,489,676,903,1233,1388,1570.
+
+which				8,15,392,621,707,1054,1584.
+
+whose				83,1556.
+
+will				346,629,658,873,905,1170.
+
+with				247,702,723,1185,1209,1408.
+
+without				547,613,693,893,1165,1380,1402.
+
+word				82,291,818,830,865.
+
+words				558.
+
+world				696.
+
+would				408,472,479,1189.
+
+written				644.
+
+xn				470,1466,1476,1492,1506,1523,1543,1552,1562,1566,1568,1594.
+
+you				840,921,1467,1477,1494,1507,1525,1544,1553,1563,1567,1573,1595.
+
+
+505

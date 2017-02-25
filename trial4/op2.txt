@@ -1,0 +1,19 @@
+Enter File Name:
+
+The number of characters read : 258
+
+The total number of unique words are : 50
+Enter the search word:
+1->Hello I am Rishabh
+2->I study in Pes University
+3->I am doing btech in Computer science
+4->I learn C
+5-> I learn python
+6->I learn Java
+7->I study programming and android
+8->I want to learn Machine learning
+9->I like to play Football
+10->I will graduate in 2019
+11->That's it about me
+
+11

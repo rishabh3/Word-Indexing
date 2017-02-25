@@ -1,0 +1,14 @@
+Enter File Name:
+The File Name entered is:ip6.txt.
+
+The number of characters read : 6363
+
+The total number of unique words are : 1027
+98
+Enter the search word:
+The search word entered is: Linear.
+The word occurs at following indexes and in the following sentences!
+279-> Linear algebra sparse matrices Polynomials and rational functions Interpolation approximation Linear quadratic and non
+289-> Linear algebra sparse matrices Polynomials and rational functions Interpolation approximation Linear quadratic and non
+308->linear optimization Ordinary Differential Equation solver and Differential Algebraic Equations solver Classic and robust control Linear Matrix Inequality optimization Differentiable and non
+

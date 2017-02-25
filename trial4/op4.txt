@@ -1,0 +1,14 @@
+Enter File Name:
+The File Name entered is:morrison.txt.
+
+The number of characters read : 2663
+
+The total number of unique words are : 440
+37
+Enter the search word:
+The search word entered is: autopsy.
+The word occurs at following indexes and in the following sentences!
+117->  Later in Morrison's1980 biography it was revealed that there had been no autopsy no police reportand no doctor presentA
+127->  Also no autopsy was performed after death
+255->        The absence of an autopsy and police report is very suspicious andthe lie about his parents and the quick 
+

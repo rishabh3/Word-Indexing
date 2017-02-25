@@ -1,0 +1,14 @@
+Enter File Name:
+The File Name entered is:ip1.txt.
+
+The number of characters read : 3077
+
+The total number of unique words are : 530
+26
+Enter the search word:
+The search word entered is: small.
+The word occurs at following indexes and in the following sentences!
+11->Pattern matching is to find a pattern which is relatively small in a text which is supposed to be very large
+
+Enter the search phrase:
+The search phrase entered is: matching process.

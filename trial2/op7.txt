@@ -1,0 +1,876 @@
+6362
+Scilab is a programming language associated with a rich collection of numerical
+algorithms covering many aspects of scientific computing problems. From the software
+point of view, Scilab is an interpreted language. This generally allows to get faster
+development processes, because the user directly accesses a high-level language, with
+a rich set of features provided by the library. The Scilab language is meant to be
+extended so that user-defined data types can be defined with possibly overloaded
+operations. Scilab users can develop their own modules so that they can solve their
+particular problems. The Scilab language allows to dynamically compile and link other
+languages such as Fortran and C: this way, external libraries can be used as if they were
+a part of Scilab built-in features. Scilab also interfaces LabVIEW, a platform and
+development environment for a visual programming language from National
+Instruments. From the license point of view, Scilab is a free software in the sense that
+the user does not pay for it and Scilab is an open source software, provided under the
+Cecill license. The software is distributed with source code, so that the user has an access
+to Scilab’s most internal aspects. Most of the time, the user downloads and installs a
+binary version of Scilab, since the Scilab consortium provides Windows, Linux and Mac
+OS executable versions. Online help is provided in many local languages. From the
+scientific point of view, Scilab comes with many features. At the very beginning of
+Scilab, features were focused on linear algebra. But, rapidly, the number of features
+extended to cover many areas of scientific computing.
+The following is a short list of its capabilities:
+• Linear algebra, sparse matrices
+• Polynomials and rational functions
+• Interpolation, approximation
+• Linear, quadratic and non-linear optimization
+• Ordinary Differential Equation solver and Differential Algebraic Equations solver
+• Classic and robust control, Linear Matrix Inequality optimization
+• Differentiable and non-differentiable optimization
+• Signal processing
+• Statistics
+6Scilab provides many graphics features including a set of plotting functions which allow
+us to create 2D and 3D plots as well as user interfaces. The Xcos environment provides
+a hybrid dynamic systems modeler and simulator.
+How to get and install Scilab
+Whatever the platform is (i.e. Windows, Linux or Mac), Scilab binaries can be
+downloaded directly from the Scilab homepage http://www.scilab.org or from the
+Download area http://www.scilab.org/download. Scilab binaries are provided for both
+32 and 64-bit platforms so that they match the target installation machine. Scilab can
+also be downloaded in source form, so that we can compile Scilab by ourselves and
+produce our own binary. Compiling Scilab and generating a binary is especially
+interesting when we want to understand or debug an existing feature, or when we want
+to add a new feature. To compile Scilab, some prerequisites binary files are necessary,
+which are also provided in the Download center. Moreover, a Fortran and a C compiler
+are required.
+Become familiar with Scilab
+The useful workspace in Scilab consists of several window:
+
+ 
+
+
+The console for making calculations
+The editor for writing programs
+The graphics windows for displaying graphics
+The embedded help
+The general environment and the console
+After double clicking the icon to launch Scilab, the Scilab environment by default
+consists of the following docked windows: The console, files and variables browsers
+and the command history. In the console, after the prompt
+-->
+Just type a command and press the Enter key (Windows and Linux) or the Return key
+(Mac OS X) in the keyboard to obtain the corresponding result.
+7The menu bar
+The menus listed below are particularly useful.
+Applications
+•
+•
+The command history allows us to find all the commands from previous
+sessions to the current session.
+The variables browser allows us to find all variables previously used during
+the current session.
+Edit
+Preferences (in Scilab menu under Mac OS X) allows us to set and customize colours,
+fonts and font size in the console and in the editor, which is very useful for screen
+projection. Clicking on Clear Console clears the entire content of the console. In this
+case, the command history is still available and calculations made during the session
+remain in memory. Commands that have been erased are still available through the
+keyboard’s arrow keys.
+The Editor
+Typing directly into the console has two disadvantages: it is not possible to save the
+commands and it is not easy to edit multiple lines of instruction. The editor is the
+appropriate tool to run multiple instructions.
+Opening the Editor
+To open the editor from the console, click on the first icon in the toolbar or on
+Applications  SciNotes in the menu bar. The editor opens with a default file named
+“Untitled 1 “.
+Saving
+Any file can be saved by clicking on File  Save as
+The extension “.sce “at the end of a file name will launch automatically Scilab when
+opening it (except under Linux and Mac OS X).
+Copying into the console, executing a program
+In clicking on Execute in the menu bar, three options are available:
+8• Execute “...file with no echo “(Ctrl+Shift+E under Windows and Linux, Cmd+Shift+
+E under Mac OS X): the file is executed without writing the program in the console
+(saving the file first is mandatory).
+• Execute “... file with echo “(Ctrl+L under Windows and Linux, Cmd+L under Mac
+OS X): rewrites the file into the console and executes it.
+• Execute “...until the caret, with echo “(Ctrl+E under Windows and Linux, Cmd+E
+under Mac OS X): rewrites the selection chosen with the mouse into the console and
+executes it or executes the file data until the caret position defined by the user.
+Standard copy/paste can also be used.
+The graphics window
+Opening a graphics window
+A graphics window opens automatically when making any plot. It is possible to plot
+curves, surfaces and sequences of points.
+Online help
+To access the online help, click on ? Scilab Help in the menu bar, or type in the
+console:
+ help
+To get help with any function, type help in the console followed by the name of the
+appropriate function. For example:
+ help sin
+displays help for sine function.
+�	6362
+1				783.
+
+2D				336.
+
+32				402.
+
+3D				338.
+
+64				404.
+
+6Scilab				320.
+
+7The				590.
+
+8				839.
+
+After				528.
+
+Algebraic				301.
+
+Any				785,959.
+
+Applications				600,768.
+
+At				244.
+
+Become				490.
+
+But				256.
+
+C				110.
+
+Cecill				178,486.
+
+Classic				304.
+
+Clear				669.
+
+Clicking				667.
+
+Cmd				852,886,913.
+
+Commands				696.
+
+Compiling				436.
+
+Console				670.
+
+Copying				820.
+
+Ctrl				845,880,907.
+
+Differentiable				312.
+
+Differential				296,300.
+
+Download				389,479.
+
+Edit				633.
+
+Editor				710,750.
+
+Enter				570.
+
+Equation				297,854,908,914.
+
+Equations				302,847.
+
+Execute				830,840,876,901.
+
+File				793.
+
+Fortran				108,483,1019.
+
+From				21,146,233.
+
+Help				989.
+
+How				356.
+
+Inequality				310,557.
+
+Instruments				145,678,827.
+
+Interpolation				287.
+
+It				968.
+
+Just				563.
+
+LabVIEW				132,881,887.
+
+Linear				279,289,308.
+
+Linux				219,369,574,815,851,885,912.
+
+Mac				221,371,579,639,817,856,889,916.
+
+Matrix				309.
+
+Moreover				481.
+
+Most				199.
+
+National				144.
+
+OS				222,580,640,818,857,890,917.
+
+Online				225,979.
+
+Opening				748,955.
+
+Ordinary				295.
+
+Polynomials				283.
+
+Preferences				634.
+
+Return				577.
+
+Save				794.
+
+Saving				784.
+
+SciNotes				769.
+
+Scilab				1,27,60,80,96,125,129,152,169,239,249,361,415,428,437,466,498,535,537,636,809.
+
+Scilabs				195,212,215,372,380,396,493,988.
+
+Shift				846,853.
+
+Signal				317.
+
+Standard				945.
+
+Statistics				319.
+
+The				59,95,180,270,345,494,503,508,513,519,522,547,593,601,618,709,738,774,796,952.
+
+This				32.
+
+To				464,751,981,1000.
+
+Typing				711.
+
+Untitled				782.
+
+Whatever				362.
+
+Windows				218,368,572,849,883,910.
+
+Xcos				346,581,641,819,858,891,918.
+
+a				3,8.
+
+accesses				44,154,193,208,982.
+
+add				460.
+
+after				560.
+
+algebra				255,280.
+
+algorithms				13,133,139.
+
+allows				34,98,122,332,604,608,621,625,642.
+
+also				130,273,417,475,565,949.
+
+an				29,171,192,452,778.
+
+and				102,109,135,168,206,220,284,291,299,305,313,337,349,354,359,403,431,438,484,525,550,553,567,573,646,650,656,687,727,816,850,884,898,911,929,975.
+
+any				966,1004.
+
+appropriate				742,1017.
+
+approximation				288,326,440.
+
+areas				266,390,398,461,471,474,482,485,488,597,701,837.
+
+arrow				707.
+
+aspects				16,45,198,340,342.
+
+associated				6,50,107,118,795.
+
+at				799,803,825,956.
+
+automatically				808,963.
+
+available				686,703,838.
+
+bar				592,773,834,993.
+
+because				40,65,74,116,375,418.
+
+been				699,950.
+
+beginning				247.
+
+below				596,788.
+
+binaries				373,397.
+
+binary				209,435,441,469.
+
+bit				405.
+
+both				401.
+
+browsers				552,620.
+
+built				126.
+
+by				56,429,539,790,942,1012.
+
+calculations				507,688.
+
+can				73,82,90,115,374,416,426,787,948.
+
+capabilities				278.
+
+caret				904,939.
+
+case				680.
+
+center				480.
+
+chosen				922.
+
+clears				671.
+
+clicking				530,758,791,828,986.
+
+code				186.
+
+collection				10.
+
+colours				648.
+
+comes				240.
+
+command				555,566,602,682.
+
+commands				610,726.
+
+compile				101,427,465.
+
+compiler				487.
+
+computing				19,269.
+
+consists				499,541.
+
+console				504,527,548,559,655,677,715,757,823,869,897,928,998,1010.
+
+consortium				216.
+
+content				674.
+
+control				307.
+
+copy				946.
+
+corresponding				588.
+
+covering				14,264.
+
+create				335.
+
+current				616,631.
+
+curves				973.
+
+customize				647.
+
+data				71,936.
+
+debug				451.
+
+default				540,779.
+
+defined				70,75,941.
+
+development				38,83,136.
+
+differentiable				315.
+
+directly				43,377,712.
+
+disadvantages				718.
+
+displaying				517.
+
+displays				1023.
+
+distributed				183.
+
+docked				545.
+
+does				163.
+
+double				529.
+
+downloaded				376,395,419.
+
+downloads				205.
+
+during				629,690.
+
+dynamically				100,351.
+
+easy				731.
+
+echo				844,879,906.
+
+editor				509,659,733,739,754,775.
+
+embedded				520.
+
+end				801.
+
+entire				673.
+
+environment				137,347,524,538.
+
+erased				700.
+
+especially				443.
+
+example				1020.
+
+except				813.
+
+executable				223,367.
+
+executed				862.
+
+executes				899,930,933.
+
+executing				824.
+
+existing				453.
+
+extended				66,262.
+
+extension				797.
+
+external				113.
+
+familiar				491.
+
+faster				37.
+
+features				54,128,243,250,261,324,454,463.
+
+files				470,549,780,786,804,841,860,872,877,894,935.
+
+find				607,624.
+
+first				761,873.
+
+focused				252.
+
+followed				1011.
+
+following				271,544.
+
+fonts				649,651.
+
+for				138,166,400,505,1025.
+
+form				422,510,516,664.
+
+free				155.
+
+from				143,378,387,611,755.
+
+functions				286,330,1005,1018,1027.
+
+generally				33,523.
+
+generating				439.
+
+get				36,358,1001.
+
+graphics				323,514,518,953,957,960.
+
+has				191,716.
+
+have				698.
+
+help				226,521,980,985,999,1002,1007,1021,1024.
+
+high				46.
+
+history				556,603,683.
+
+homepage				381.
+
+http				382,391.
+
+hybrid				350.
+
+icon				532,762.
+
+if				119.
+
+including				325,582,763,770.
+
+installation				413.
+
+installs				207,360,420,694.
+
+instruction				737.
+
+instructions				747.
+
+interesting				444,497,635,653,657.
+
+interfaces				131,157,229,344,477,867.
+
+internal				197,831.
+
+interpreted				30,127.
+
+into				713,821,895,926,990,996,1008.
+
+is				2,28,62,153,170,182,227,272,365,442,661,684,720,729,740,861,874,969.
+
+it				167,719,812,931.
+
+its				277,366,728,900.
+
+key				571,578.
+
+keyboard				584.
+
+keyboards				706.
+
+keys				708.
+
+language				5,31,48,61,97.
+
+languages				105,142,232.
+
+launch				534,807.
+
+level				47.
+
+libraries				114.
+
+library				58.
+
+license				148,179.
+
+linear				254,293.
+
+lines				735.
+
+link				103.
+
+list				275.
+
+listed				595.
+
+local				231.
+
+machine				414.
+
+made				689.
+
+making				506,965.
+
+mandatory				875.
+
+many				15,230,242,265,322.
+
+match				410.
+
+matrices				282.
+
+meant				63.
+
+memory				695.
+
+menu				591,637,772,833,992.
+
+menus				594.
+
+modeler				353.
+
+modules				86.
+
+most				196.
+
+mouse				925.
+
+multiple				734,746.
+
+named				781,805,1014.
+
+necessary				472.
+
+new				462.
+
+non				292,314,843.
+
+not				164,721,730.
+
+number				259.
+
+numerical				12.
+
+obtain				586.
+
+of				11,17,25,53,124,150,200,211,237,248,260,267,276,328,500,542,675,736,802,977,1015.
+
+on				253,668,759,767,792,829.
+
+online				984,987.
+
+open				172,752.
+
+opening				811.
+
+opens				776,962.
+
+operations				79.
+
+optimization				294,311,316.
+
+options				836.
+
+or				370,386,450,455,575,766,932,994.
+
+org				385,394.
+
+other				104.
+
+ourselves				430,433.
+
+overloaded				78.
+
+own				85,434.
+
+particular				93,123.
+
+particularly				598.
+
+paste				947.
+
+pay				165.
+
+platform				134,364.
+
+platforms				406.
+
+plots				339.
+
+plotting				329,967,972.
+
+point				24,149,236.
+
+points				978.
+
+position				940.
+
+possible				722,970.
+
+possibly				77.
+
+prerequisites				468.
+
+press				568.
+
+previous				612.
+
+previously				627.
+
+problems				20,94.
+
+processes				39.
+
+processing				318.
+
+produce				432.
+
+programming				4,141,826,866.
+
+programs				512.
+
+projection				666.
+
+prompt				562.
+
+provided				55,175,228,399,476.
+
+provides				217,321,348.
+
+quadratic				290.
+
+rapidly				257.
+
+rational				285.
+
+remain				693.
+
+required				489.
+
+result				589.
+
+rewrites				892,919.
+
+rich				9,51.
+
+robust				306.
+
+run				745.
+
+save				724.
+
+saved				789.
+
+saving				870.
+
+sce				798.
+
+scientific				18,235,268.
+
+scilab				384,393.
+
+screen				665.
+
+selection				921.
+
+sense				159.
+
+sequences				976.
+
+sessions				613,617,632,692.
+
+set				52,327,645.
+
+several				501.
+
+short				274.
+
+simulator				355.
+
+since				213,1022.
+
+sine				1026.
+
+size				652.
+
+software				23,67,87,156,174,181.
+
+solve				91,187,407.
+
+solver				298,303,423.
+
+some				467.
+
+source				173,185,421.
+
+sparse				281.
+
+still				685,702.
+
+such				106.
+
+surfaces				974.
+
+systems				352.
+
+target				412.
+
+that				68,88,160,188,408,424,697.
+
+the				22,41,57,147,158,161,258,411,526,531,554,558,561,630,654,658,691,705,714,771,800.
+
+their				84,92,177,189,203,214,234,245,363,379,388,478,536,543,569,576,583,587,609,615,672,676,681,725,741,749,753,756,760,764,822,832,859,983,991,997,1009,1013,1016.
+
+they				89,120,201,409,865,868,871,893,896,903,920,924,927,934,938,943.
+
+this				111,679.
+
+three				835.
+
+through				704.
+
+time				202.
+
+to				35,64,99,194,263,334,357,448,459,533,585,606,614,623,644,723,732,744,971.
+
+tool				743.
+
+toolbar				765.
+
+two				717.
+
+types				72,564,995,1006.
+
+under				176,638,848,855,909,915.
+
+understand				449,814,882,888.
+
+until				902,937.
+
+used				117,605,622,628,643,951.
+
+useful				495,599,663.
+
+user				42,69,162,944.
+
+users				81,190,204,333,343.
+
+variables				551,619,626.
+
+version				210.
+
+versions				224.
+
+very				246,662.
+
+view				26,151,238.
+
+visual				140.
+
+want				447,458.
+
+way				112.
+
+well				341,425,446,457.
+
+were				121,251.
+
+when				445,456,810,964.
+
+which				331,473,660.
+
+will				806.
+
+window				502,954,958,961.
+
+windows				515,546.
+
+with				7,49,76,184,241,492,777,842,878,905,923,1003.
+
+without				863.
+
+workspace				496.
+
+writing				511,864.
+
+www				383,392.
+
+
+380
